@@ -1,0 +1,34 @@
+{
+  "name": "kairos-server",
+  "version": "0.0.1",
+  "description": "📅 Serves a calendar API for authenticated students at AP.",
+  "author": "Luna Simons <luna@bddvlpr.com>",
+  "license": "BSD-3-Clause",
+  "repository": "https://github.com/kairos-ap/kairos-server.git",
+  "main": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "commit": "cz",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "format": "prettier --write --plugin-search-dir=. . && eslint . --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "commitizen": "^4.2.5",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "git-cz": "^4.9.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  }
+}

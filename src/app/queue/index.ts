@@ -13,7 +13,7 @@ const addAndRetrieve = async <D, R>(queue: Bull.Queue<D>, data: D) => {
 };
 
 const retrieve = async <R>(queue: Bull.Queue) => {
-  return addAndRetrieve<unknown, R>(queue, {});
+  return await addAndRetrieve<unknown, R>(queue, {});
 };
 
 export { createQueue, addAndRetrieve, retrieve };
